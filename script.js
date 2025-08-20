@@ -53,6 +53,66 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+ // Obtener elementos
+        const btnPersonalizados = document.querySelector('[data-categoria="personalizados"]');
+        const btnVVS = document.querySelector('[data-categoria="anillos"]');
+        const textoPedido = document.querySelector('.texto-pedido:not(.texto-vvs)');
+        const textoVVS = document.querySelector('.texto-vvs');
+        const botonesCategorias = document.querySelectorAll('.categoria-btn');
+        let spanPersonalizadosVisible = false;
+        let spanVVSVisible = false;
+
+        // Función para mostrar/ocultar el span de Personalizados
+        function toggleSpanPersonalizados() {
+            if (spanPersonalizadosVisible) {
+                textoPedido.classList.remove('mostrar');
+                spanPersonalizadosVisible = false;
+            } else {
+                textoPedido.classList.add('mostrar');
+                spanPersonalizadosVisible = true;
+            }
+        }
+
+        // Función para mostrar/ocultar el span de VVS
+        function toggleSpanVVS() {
+            if (spanVVSVisible) {
+                textoVVS.classList.remove('mostrar');
+                spanVVSVisible = false;
+            } else {
+                textoVVS.classList.add('mostrar');
+                spanVVSVisible = true;
+            }
+        }
+
+        // Event listener para todos los botones
+        botonesCategorias.forEach(boton => {
+            boton.addEventListener('click', function() {
+                // Remover clase active de todos los botones
+                botonesCategorias.forEach(b => b.classList.remove('active'));
+                
+                // Agregar clase active al botón clickeado
+                this.classList.add('active');
+                
+                // Manejar spans según el botón clickeado
+                if (this.dataset.categoria === 'personalizados') {
+                    toggleSpanPersonalizados();
+                    // Ocultar el span de VVS si está visible
+                    textoVVS.classList.remove('mostrar');
+                    spanVVSVisible = false;
+                } else if (this.dataset.categoria === 'anillos') {
+                    toggleSpanVVS();
+                    // Ocultar el span de Personalizados si está visible
+                    textoPedido.classList.remove('mostrar');
+                    spanPersonalizadosVisible = false;
+                } else {
+                    // Si es cualquier otro botón, ocultar ambos spans
+                    textoPedido.classList.remove('mostrar');
+                    textoVVS.classList.remove('mostrar');
+                    spanPersonalizadosVisible = false;
+                    spanVVSVisible = false;
+                }
+            });
+        });
 
 // Modal slider de producto
 function openModal(card) {

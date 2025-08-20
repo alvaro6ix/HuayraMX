@@ -166,14 +166,24 @@
 
     <!-- Productos -->
         <section id="productos">
-    <h2>Nuestra Colección 💎</h2>
-    <div class="categorias">
-        <button class="categoria-btn active" data-categoria="collares">Collares</button>
-        <button class="categoria-btn" data-categoria="relojes">Relojes</button>
-        <button class="categoria-btn" data-categoria="pulsos">Pulsos</button>
-        <button class="categoria-btn" data-categoria="personalizados">Personalizados</button>
-        <button class="categoria-btn" data-categoria="anillos">Anillos</button>
-    </div>
+        <h2>Nuestra Colección 💎</h2>
+        <div class="categorias">
+            <button class="categoria-btn active" data-categoria="collares">Collares</button>
+            <button class="categoria-btn" data-categoria="relojes">Relojes</button>
+            <button class="categoria-btn" data-categoria="pulsos">Pulsos</button>
+            
+            <!-- Contenedor para el botón con span -->
+            <div class="boton-container">
+                <button class="categoria-btn" data-categoria="personalizados">Personalizados</button>
+                <span class="texto-pedido">Sobre pedido</span>
+            </div>
+            
+            <!-- Contenedor para VVS Joyería con span -->
+            <div class="boton-container">
+                <button class="categoria-btn" data-categoria="anillos">VVS Joyería</button>
+                <span class="texto-pedido texto-vvs">Premium sobre pedido</span>
+            </div>
+        </div>
     <div class="products-grid">
         <!-- Collares -->
         <div class="product-card" data-categoria="collares">
@@ -613,12 +623,11 @@
         </ul>
     </div>
 </div>
-
 <div class="product-card" data-categoria="personalizados">
     <div class="product-card-content">
         <img src="imgpersonalizados/frankmuller.jpg" class="product-image" alt="frankmuller">
         <div class="product-name">Franck Muller Vanguard Yachting Diamond </div>
-        <div class="product-price">$1000</div>
+        <div class="product-price">$1,000</div>
         <button class="ver-producto-btn">Ver</button>
         <div class="product-gallery" style="display:none;">
             <img src="imgpersonalizados/frankmuller1.jpg" alt="frankmuller">
@@ -644,7 +653,7 @@
     <div class="product-card-content">
         <img src="imgpersonalizados/APdiamond.jpg" class="product-image" alt="APdiamond">
         <div class="product-name">Audemars Piguet Royal Oak Chronograph</div>
-        <div class="product-price">$1000</div>
+        <div class="product-price">$1,000</div>
         <button class="ver-producto-btn">Ver</button>
         <div class="product-gallery" style="display:none;">
             <img src="imgpersonalizados/APdiamond1.jpg" alt="APdiamond">
@@ -908,26 +917,24 @@
 </div>
 <div class="product-card" data-categoria="personalizados">
     <div class="product-card-content">
-        <img src="imgpersonalizados/RMV_2.jpg" class="product-image" alt="RMV_2">
-        <div class="product-name">Richard Mille RM 011</div>
-        <div class="product-price">$850</div>
+        <img src="imgpersonalizados/APTourbillon.jpg" class="product-image" alt="APTourbillon">
+        <div class="product-name">Audemars Piguet Royal Oak Tourbillon</div>
+        <div class="product-price">$1,500</div>
         <button class="ver-producto-btn">Ver</button>
         <div class="product-gallery" style="display:none;">
-            <img src="imgpersonalizados/RMV_2.1.jpg" alt="RMV_2">
-            <img src="imgpersonalizados/RMV_2.2.jpg" alt="RMV_2">
-            <img src="imgpersonalizados/RMV_2.3.jpg" alt="RMV_2">
-            <img src="imgpersonalizados/RMV_2.4.jpg" alt="RMV_2">
+            <img src="imgpersonalizados/APTourbillon.jpg" alt="APTourbillon">
+           
         </div>
         <div class="product-description" style="display:none;">
-            Richard Mille RM 011, con caja de oro rosa y correa de Color, sobre pedido.
+            Audemars Piguet Royal Oak Tourbillon, con movimiento tourbillon visible a través de la esfera, sobre pedido.
         </div>
         <div class="product-specs" style="display:none;">
-            <strong>Especificaciones:</strong> Varios colores de correa disponibles.
+            <strong>Especificaciones:</strong> Varios colores disponibles.
         </div>
         <ul class="product-features" style="display:none;">
-            <li>Diseño único</li>
-            <li>Cronógrafo flyback</li>
-            <li>Movimiento esqueletizado</li>
+            <li>Cristal de Zafiro</li>
+            <li>Tourbillon Visible </li>
+            <li>Esfera Grande Tapisserie</li>
             <li>Materiales premium</li>
             <li>Deportivo</li>
         </ul>
@@ -935,57 +942,377 @@
 </div>
 <div class="product-card" data-categoria="personalizados">
     <div class="product-card-content">
-        <img src="imgpersonalizados/RMV_2.jpg" class="product-image" alt="RMV_2">
-        <div class="product-name">Richard Mille RM 011</div>
-        <div class="product-price">$850</div>
+        <img src="imgpersonalizados/offshore1.jpg" class="product-image" alt="offshore1">
+        <div class="product-name">Audemars Piguet Royal Oak Offshore Diver</div>
+        <div class="product-price">$1,650</div>
         <button class="ver-producto-btn">Ver</button>
         <div class="product-gallery" style="display:none;">
-            <img src="imgpersonalizados/RMV_2.1.jpg" alt="RMV_2">
-            <img src="imgpersonalizados/RMV_2.2.jpg" alt="RMV_2">
-            <img src="imgpersonalizados/RMV_2.3.jpg" alt="RMV_2">
-            <img src="imgpersonalizados/RMV_2.4.jpg" alt="RMV_2">
+            <img src="imgpersonalizados/offshore2.jpg" alt="offshore1">
+            <img src="imgpersonalizados/offshore1.jpg" alt="offshore1">
+            <img src="imgpersonalizados/offshore3.jpg" alt="offshore1">
         </div>
         <div class="product-description" style="display:none;">
-            Richard Mille RM 011, con caja de oro rosa y correa de Color, sobre pedido.
+            Audemars Piguet Royal Oak Offshore Diver, reloj de buceo con resistencia al agua, sobre pedido.
         </div>
         <div class="product-specs" style="display:none;">
-            <strong>Especificaciones:</strong> Varios colores de correa disponibles.
+            <strong>Especificaciones:</strong> Pieza exclusiva pocos disponibles.
         </div>
         <ul class="product-features" style="display:none;">
             <li>Diseño único</li>
-            <li>Cronógrafo flyback</li>
-            <li>Movimiento esqueletizado</li>
+            <li>Patrón "Méga Tapisserie"</li>
             <li>Materiales premium</li>
             <li>Deportivo</li>
         </ul>
     </div>
 </div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/PKCRONO.jpg" class="product-image" alt="PKCRONO">
+        <div class="product-name">Patek Philippe Nautilus Chronograph</div>
+        <div class="product-price">$3,000</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/PKCRONO.jpg" alt="PKCRONO">
+            <img src="imgpersonalizados/PKCRONO1.jpg" alt="PKCRONO">
+           
+            <img src="imgpersonalizados/PKCRONO3.jpg" alt="PKCRONO">
+        </div>
+        <div class="product-description" style="display:none;">
+            Patek Philippe Nautilus Chronograph, con cronógrafo flyback y función de fecha, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza exclusiva pocos disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Diseño iconico</li>
+            <li>Tres subesderas"</li>
+            <li>De la mas alta calidad</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/PKCALENDAR.jpg" class="product-image" alt="PKCALENDAR">
+        <div class="product-name">Patek Philippe Grand Complications Perpetual Calendar </div>
+        <div class="product-price">$2,000</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/PKCALENDAR.jpg" alt="PKCALENDAR">
+        </div>
+        <div class="product-description" style="display:none;">
+            Patek Philippe Grand Complications Perpetual Calendar, con calendario perpetuo y fases lunares, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza exclusiva pocos disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Diseño único</li>
+            <li>Calendario perpetuo"</li>
+            <li>Cronógrafo</li>
+            <li>Fases lunares</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/huayragenove.jpg" class="product-image" alt="huayragenove">
+        <div class="product-name">HUAYRA Geneve</div>
+        <div class="product-price">$3,000</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/huayragenove2.jpg" alt="huayragenove">
+        </div>
+        <div class="product-description" style="display:none;">
+            HUAYRA Geneve, reloj de lujo con diseño exclusivo y materiales de alta calidad, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza exclusiva de la marca pocos disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Movimiento Seiko</li>
+            <li>Acero inoxidable"</li>
+            <li>Zirconia AAA</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/APBALANCE.jpg" class="product-image" alt="APBALANCE">
+        <div class="product-name">Audemars Piguet Royal Oak Double Balance Wheel Openworked</div>
+        <div class="product-price">$3,000</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/APBALANCE.jpg" alt="APBALANCE">
+            <img src="imgpersonalizados/APBALANCE1.jpg" alt="APBALANCE">
+            <img src="imgpersonalizados/APBALANCE3.jpg" alt="APBALANCE">
+        </div>
+        <div class="product-description" style="display:none;">
+            Audemars Piguet Royal Oak Double Balance Wheel Openworked, con movimiento de doble rueda de equilibrio visible a través de la esfera esqueletizada, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Varios colores disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Esfera esqueletizada/li>
+            <li>Materiales premium</li>
+            <li>Deportivo</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/FMVANGUARD.jpg" class="product-image" alt="FMVANGUARD">
+        <div class="product-name">Franck Muller Vanguard Tourbillon Chronograph</div>
+        <div class="product-price">$2,250</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/FMVANGUARD1.jpg" alt="FMVANGUARD">
+            <img src="imgpersonalizados/FMVANGUARD2.jpg" alt="FMVANGUARD">
+            <img src="imgpersonalizados/FMVANGUARD3.jpg" alt="FMVANGUARD">
+        </div>
+        <div class="product-description" style="display:none;">
+            Franck Muller Vanguard Tourbillon Chronograph, con movimiento tourbillon y cronógrafo, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza exclusiva pocos disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Tourbillon</li>
+            <li>Cronografo"</li>
+            <li>Materiales premium</li>
+            <li>Correa de piel</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/APOAK.jpg" class="product-image" alt="APOAK">
+        <div class="product-name">Audemars Piguet Royal Oak Offshore Chronograph</div>
+        <div class="product-price">$1,700</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/APOAK.jpg" alt="APOAK">
+            <img src="imgpersonalizados/APOAK1.jpg" alt="APOAK">
+            <img src="imgpersonalizados/APOAK2.jpg" alt="APOAK">
+            <img src="imgpersonalizados/APOAK3.jpg" alt="APOAK">
+            <img src="imgpersonalizados/APOAK4.jpg" alt="APOAK">
+        </div>
+        <div class="product-description" style="display:none;">
+            Audemars Piguet Royal Oak Offshore Chronograph, con caja de acero inoxidable y bisel de cerámica, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza exclusiva pocos disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Diseño único</li>
+            <li>Patrón "Méga Tapisserie"</li>
+            <li>Cronografo</li>
+            <li>Deportivo</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/APTIFANY.jpg" class="product-image" alt="APTIFANY">
+        <div class="product-name">Audemars Piguet Royal Oak Offshore Chronograph</div>
+        <div class="product-price">$2,000</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/APTIFANY4.jpg" alt="APTIFANY">
+            <img src="imgpersonalizados/APTIFANY1.jpg" alt="APTIFANY">
+            <img src="imgpersonalizados/APTIFANY2.jpg" alt="APTIFANY">
+            <img src="imgpersonalizados/APTIFANY3.jpg" alt="APTIFANY">
+
+        </div>
+        <div class="product-description" style="display:none;">
+            Audemars Piguet Royal Oak Offshore Diver, reloj de buceo con resistencia al agua, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Varios colores disponible de esfera y correa.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Cronografo/li>
+            <li>Patrón "Méga Tapisserie"</li>
+            <li>Caja de Acero inoxidable</li>
+            <li>Deportivo</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/RMTIGER.jpg" class="product-image" alt="    RMTIGER">
+        <div class="product-name">Richard Mille RM 51-01 Tourbillon Tiger and Dragon</div>
+        <div class="product-price">$1,300</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/RMTIGER.jpg" alt="RMTIGER">
+            <img src="imgpersonalizados/RMTIGER1.jpg" alt=" RMTIGER">
+            <img src="imgpersonalizados/RMTIGER2.jpg" alt=" RMTIGER">
+            <img src="imgpersonalizados/RMTIGER3.jpg" alt=" RMTIGER">
+        </div>
+        <div class="product-description" style="display:none;">
+            Richard Mille RM 51-01 Tourbillon Tiger and Dragon, con diseño exclusivo y movimiento tourbillon, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza exclusiva pocos disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Diseño único</li>
+            <li>Tourbillon</li>
+            <li>Materiales premium</li>
+            <li>Deportivo</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/HUBLOTBARRIL.jpg" class="product-image" alt=" Hublot Spirit of Big Bang">
+        <div class="product-name">Hublot Spirit of Big Bang</div>
+        <div class="product-price">$1,200</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/HUBLOTBARRIL1.jpg" alt="HUBLOTBARRIL">
+            <img src="imgpersonalizados/HUBLOTBARRIL2.jpg" alt="HUBLOTBARRIL">
+            <img src="imgpersonalizados/HUBLOTBARRIL3.jpg" alt="HUBLOTBARRIL">
+        </div>
+        <div class="product-description" style="display:none;">
+            Hublot Spirit of Big Bang, con caja de cerámica y correa de caucho, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza exclusiva pocos disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Cronografo</li>
+            <li>Caja en forma de barril</li>
+            <li>Materiales premium</li>
+            <li>Esfera esqueletizada</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/HUBLOTSKELETON.jpg" class="product-image" alt="HUBLOTSKELETON">
+        <div class="product-name">Hublot Big Bang Unico Skeleton</div>
+        <div class="product-price">$1,800</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/HUBLOTSKELETON1.jpg" alt="HUBLOTSKELETON">
+            <img src="imgpersonalizados/HUBLOTSKELETON2.jpg" alt="HUBLOTSKELETON">
+            <img src="imgpersonalizados/HUBLOTSKELETON3.jpg" alt="HUBLOTSKELETON">
+        </div>
+        <div class="product-description" style="display:none;">
+            Hublot Big Bang Unico Skeleton, con movimiento cronógrafo flyback visible a través de la esfera esqueletizada, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza exclusiva pocos disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Diseño iconico de Hublot</li>
+            <li>esqueletizado"</li>
+            <li>Cronógrafo flyback</li>
+            <li>Correa de caucho</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/HUBLOTKING.jpg" class="product-image" alt="HUBLOTKING">
+        <div class="product-name">Hublot Big Bang Unico en King Gold y Titanio</div>
+        <div class="product-price">$1,250</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/HUBLOTKING.jpg" alt="HUBLOTKING">
+            <img src="imgpersonalizados/HUBLOTKING1.jpg" alt="HUBLOTKING">
+            <img src="imgpersonalizados/HUBLOTKING2.jpg" alt="HUBLOTKING">
+        </div>
+        <div class="product-description" style="display:none;">
+            Hublot Big Bang Unico en King Gold y Titanio, con caja de oro rosa y titanio, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza exclusiva pocos disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Diseño único</li>
+            <li>Eesqueletizado"</li>
+            <li>Caucho</li>
+            <li>Cronografo</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/CartierGalbée.jpg" class="product-image" alt="CartierGalbée">
+        <div class="product-name">CartierGalbée</div>
+        <div class="product-price">$5,000</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/CartierGalbée1.jpg" alt="CartierGalbée">
+            <img src="imgpersonalizados/CartierGalbée2.jpg" alt="CartierGalbée">
+            <img src="imgpersonalizados/CartierGalbée3.jpg" alt="CartierGalbée">
+        </div>
+        <div class="product-description" style="display:none;">
+            Cartier Galbée, con caja de acero inoxidable, corona de diamanetes y correa de piel, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza exclusiva pocos disponibles.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Caja cuadrada</li>
+            <li>Esfer guilloché"</li>
+            <li>Correa de piel</li>
+        </ul>
+    </div>
+</div>
+<div class="product-card" data-categoria="personalizados">
+    <div class="product-card-content">
+        <img src="imgpersonalizados/cartiertank.jpg" class="product-image" alt="Cartier Tank Must">
+        <div class="product-name">Cartier Tank Must</div>
+        <div class="product-price">$1,500</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgpersonalizados/cartiertank.jpg" alt="cartiertank">
+            <img src="imgpersonalizados/cartiertank1.jpg" alt="cartiertank">
+            <img src="imgpersonalizados/cartiertank2.jpg" alt="cartiertank">
+            <img src="imgpersonalizados/cartiertank3.jpg" alt="cartiertank">
+        </div>
+        <div class="product-description" style="display:none;">
+            Cartier Tank Must, con caja de acero inoxidable y correa de piel, sobre pedido.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Pieza clasica atemporal.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Diseño clásico</li>
+            <li>Corona azul</li>
+            <li>Correa de piel</li>
+        </ul>
+    </div>
+</div>
+
 
 <!-- Anillos -->
 <div class="product-card" data-categoria="anillos">
     <div class="product-card-content">
-        <img src="img/anillo1.jpg" class="product-image" alt="Anillo de Diamante">
-        <div class="product-name">Anillo de Diamante</div>
-        <div class="product-price">$2,500</div>
+        <img src="imgVVS/Corazon1k.jpg" class="product-image" alt="Collar Moissanita Plata S925 Mujer">
+        <div class="product-name">Collar Moissanita Plata S925 Mujer</div>
+        <div class="product-price">$1,100</div>
         <button class="ver-producto-btn">Ver</button>
         <div class="product-gallery" style="display:none;">
-            <img src="img/anillo1.jpg" alt="Anillo de Diamante">
-            <img src="img/anillo2.jpg" alt="Anillo de Diamante">
-            <img src="img/anillo3.jpg" alt="Anillo de Diamante">
-            <img src="img/anillo4.jpg" alt="Anillo de Diamante">
-            <img src="img/anillo5.jpg" alt="Anillo de Diamante">
+            <img src="imgVVS/Corazon1k.jpg" alt="Collar Moissanita Plata S925 Mujer">
+            <img src="imgVVS/Corazon1k1.jpg" alt="Collar Moissanita Plata S925 Mujer">
         </div>
         <div class="product-description" style="display:none;">
-            Elegante anillo de oro blanco de 18k con diamante solitario de 1 quilate. Corte brillante, claridad VS1, color G.
+            Collar de moissanita de 1 quilate en forma de corazón, montado en plata S925. Ideal para ocasiones especiales
+            incluye: collar plata de ley, paño de pulido, caja de regalo.
         </div>
         <div class="product-specs" style="display:none;">
-            <strong>Especificaciones:</strong> Oro blanco 18k, Diamante 1ct, Talla 6-8 disponible, Certificado GIA
+            <strong>Especificaciones:</strong> Longuitud de collar 40 + 5cm, dije 15mm x 15mm, Moissanita 6.5mm x 6.5mm, 1 quilate.
         </div>
         <ul class="product-features" style="display:none;">
-            <li>Diamante certificado</li>
-            <li>Oro 18k</li>
-            <li>Garantía de por vida</li>
-            <li>Estuche de regalo</li>
+            <li>Certificado GRA</li>
+            <li>Moissanita 1 quilate</li>
+            <li>Plata s925</li>
+            <li>Reverso grabado I ❤ U </li>
         </ul>
     </div>
 </div>
