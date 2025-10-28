@@ -1,3 +1,21 @@
+
+// Mostrar notificación de bienvenida
+window.addEventListener('load', function() {
+    const notification = document.getElementById('notification');
+    
+    // Mostrar la notificación
+    notification.style.display = 'block';
+    notification.style.opacity = '1';
+    
+    // Ocultarla después de 5 segundos
+    setTimeout(() => {
+        notification.style.opacity = '0';
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 500); // Espera a que termine la transición
+    }, 5000); // 5000ms = 5 segundos
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const categoriaBtns = document.querySelectorAll('.categoria-btn');
     const productCards = document.querySelectorAll('.product-card');
@@ -291,4 +309,73 @@ window.addEventListener('click', function(e) {
 });
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeZoom();
+});
+// Slider de Reseñas
+let currentReviewSlide = 0;
+let totalReviewSlides = 0;
+
+document.addEventListener('DOMContentLoaded', function() {
+    initReviewSlider();
+});
+
+function initReviewSlider() {
+    const slides = document.querySelectorAll('.review-slide');
+    totalReviewSlides = slides.length;
+    
+    // Crear dots
+    const dotsContainer = document.querySelector('.review-dots');
+    slides.forEach((_, index) => {
+        const dot = document.createElement('span');
+        dot.className = 'review-dot';
+        if (index === 0) dot.classList.add('active');
+        dot.onclick = () => goToReview(index);
+        dotsContainer.appendChild(dot);
+    });
+    
+    // Auto-play cada 5 segundos
+    setInterval(() => {
+        nextReview();
+    }, 5000);
+}
+
+function showReview(index) {
+    const slides = document.querySelectorAll('.review-slide');
+    const dots = document.querySelectorAll('.review-dot');
+    
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+    
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    });
+    
+    currentReviewSlide = index;
+}
+
+function nextReview() {
+    let index = currentReviewSlide + 1;
+    if (index >= totalReviewSlides) index = 0;
+    showReview(index);
+}
+
+function prevReview() {
+    let index = currentReviewSlide - 1;
+    if (index < 0) index = totalReviewSlides - 1;
+    showReview(index);
+}
+
+function goToReview(index) {
+    showReview(index);
+}
+
+// Click en imagen para ampliar
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(() => {
+        document.querySelectorAll('.review-slide img').forEach(img => {
+            img.onclick = function() {
+                openZoom(img.src);
+            };
+        });
+    }, 500);
 });
