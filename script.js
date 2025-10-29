@@ -151,6 +151,12 @@ function openModal(card) {
         sliderDots += `<span class="slider-dot${idx === 0 ? ' active' : ''}" onclick="showSlide(${idx})"></span>`;
     });
 
+    // Crear mensaje de WhatsApp
+    const whatsappMessage = encodeURIComponent(
+    `Hola Huayra MX 👋\n\nMe interesa: ${name}\n💎 ${price}\n\n¿Está disponible?`
+);
+    const whatsappLink = `https://wa.me/527227453989?text=${whatsappMessage}`;
+
     const modal = document.getElementById('modal');
     const modalBody = document.getElementById('modal-body');
     modalBody.innerHTML = `
@@ -172,6 +178,10 @@ function openModal(card) {
                 ${features.map(f => `<li>${f}</li>`).join('')}
             </ul>
         </div>
+        <a href="${whatsappLink}" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span>Enviar mensaje</span>
+        </a>
     `;
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
@@ -188,6 +198,17 @@ function openModal(card) {
         });
     }, 50);
 }
+```
+
+**¿Qué hace este código?**
+
+1. **Crea un mensaje personalizado** con el nombre del producto y su precio
+2. **Genera un enlace de WhatsApp** que incluye tu número (527227453989) y el mensaje
+3. **Agrega un botón verde estilo WhatsApp** con el icono oficial
+4. Al hacer clic, abre WhatsApp (en móvil la app, en escritorio WhatsApp Web) con el mensaje ya escrito
+
+**El mensaje que se enviará será algo así:**
+```
 
 // Slider funciones
 function showSlide(idx) {

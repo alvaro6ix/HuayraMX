@@ -62,16 +62,17 @@
                     <img src="https://img.icons8.com/color/24/diamond.png" alt="Productos" style="vertical-align:middle;"> Productos
                 </a>
             </li>
+             <li>
+    <a href="#clientes" onclick="scrollToSection('clientes')">
+        <img src="https://img.icons8.com/color/24/star.png" alt="Clientes" style="vertical-align:middle;"> Clientes
+    </a>
+</li>
             <li>
                 <a href="#contacto" onclick="scrollToSection('contacto')">
                     <img src="https://img.icons8.com/color/24/new-post.png" alt="Contacto" style="vertical-align:middle;"> Contacto
                 </a>
             </li>
-            <li>
-    <a href="#clientes" onclick="scrollToSection('clientes')">
-        <img src="https://img.icons8.com/color/24/star.png" alt="Clientes" style="vertical-align:middle;"> Clientes
-    </a>
-</li>
+           
         </ul>
 
         <div class="nav-right">
@@ -104,12 +105,13 @@
             <a href="#productos" onclick="toggleMobileMenu(); scrollToSection('productos')">
                 <img src="https://img.icons8.com/color/24/diamond.png" alt="Productos" style="vertical-align:middle;"> Productos
             </a>
+             <a href="#clientes" onclick="toggleMobileMenu(); scrollToSection('clientes')">
+    <img src="https://img.icons8.com/color/24/star.png" alt="Clientes" style="vertical-align:middle;"> Clientes
+</a>
             <a href="#contacto" onclick="toggleMobileMenu(); scrollToSection('contacto')">
                 <img src="https://img.icons8.com/color/24/new-post.png" alt="Contacto" style="vertical-align:middle;"> Contacto
             </a>
-            <a href="#clientes" onclick="toggleMobileMenu(); scrollToSection('clientes')">
-    <img src="https://img.icons8.com/color/24/star.png" alt="Clientes" style="vertical-align:middle;"> Clientes
-</a>
+           
         </div>
 
         <div class="mobile-social">
@@ -176,9 +178,9 @@
         <section id="productos">
         <h2>Nuestra Colección 💎</h2>
         <div class="categorias">
-            <button class="categoria-btn active" data-categoria="collares">Collares</button>
+            <button class="categoria-btn active" data-categoria="collares">Collares y Anillos</button>
             <button class="categoria-btn" data-categoria="relojes">Relojes</button>
-            <button class="categoria-btn" data-categoria="pulsos">Pulsos</button>
+            <button class="categoria-btn" data-categoria="pulsos">Pulsos y Aretes</button>
             
             <!-- Contenedor para el botón con span -->
             <div class="boton-container">
@@ -193,7 +195,160 @@
             </div>
         </div>
     <div class="products-grid">
-        <!-- Collares -->
+        <!-- Collares y anillos -->
+         <!-- Anillos en Collares -->
+<div class="product-card" data-categoria="collares">
+    <div class="product-card-content">
+        <img src="imgcollaresyaretes/anillolegado.jpg" class="product-image" alt="anillolegado">
+        <div class="product-name">Anillo Legado de Amor</div>
+        <div class="product-price">$1,200</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgcollaresyaretes/anillolegado1.jpg" alt="anillolegado">
+            <img src="imgcollaresyaretes/anillolegado2.jpg" alt="anillolegado">
+            <img src="imgcollaresyaretes/anillolegado3.jpg" alt="anillolegado">
+        </div>
+        <div class="product-description" style="display:none;">
+            Anillo con moissanita 2.0ct en plata S925, diseño clásico y elegante.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Plata S925, Moissanita 2.0ct.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Plata S925</li>
+            <li>Moissanita certificada</li>
+            <li>Talla 7</li>
+            <li>Diseño elegante</li>
+        </ul>
+    </div>
+</div>
+
+<div class="product-card" data-categoria="collares">
+    <div class="product-card-content">
+        <img src="imgcollaresyaretes/anillolyra.jpg" class="product-image" alt="lyra">
+        <div class="product-name">Anillo lyra </div>
+        <div class="product-price">$1,000</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgcollaresyaretes/anillolyra1.jpg" alt="lyra">
+            <img src="imgcollaresyaretes/anillolyra2.jpg" alt="lyra">
+            <img src="imgcollaresyaretes/anillolyra3.jpg" alt="lyra">
+        </div>
+        <div class="product-description" style="display:none;">
+            Anillo con diseño halo, piedra central de moissanita rodeada de pequeñas gemas.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Plata S925, Moissanita 1.0ct total.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Plata S925</li>
+            <li>Moissanita certificada</li>
+            <li>Talla 6</li>
+            <li>Diseño halo</li>
+        </ul>
+    </div>
+</div>
+
+<div class="product-card" data-categoria="collares">
+    <div class="product-card-content">
+        <img src="imgcollaresyaretes/conjuntoazul.jpg" class="product-image" alt="conjuntoazul">
+        <div class="product-name">Conjunto Noche Azul</div>
+        <div class="product-price">$1,000</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgcollaresyaretes/conjuntoazul1.jpg" alt="conjuntoazul">
+            <img src="imgcollaresyaretes/conjuntoazul2.jpg" alt="conjuntoazul">
+        </div>
+        <div class="product-description" style="display:none;">
+        Conjunto de anillo, aretes y collar con moissanita azul y plata S925.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Plata S925, Moissanita 1.0ct total.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Plata S925</li>
+            <li>Moissanita certificada</li>
+            <li>Estilo eternidad</li>
+        </ul>
+    </div>
+</div>
+
+<div class="product-card" data-categoria="collares">
+    <div class="product-card-content">
+        <img src="imgcollaresyaretes/anilloimperio.jpg" class="product-image" alt="anilloimperio">
+        <div class="product-name">Anillo Imperio </div>
+        <div class="product-price">$1,500</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgcollaresyaretes/anilloimperio1.jpg" alt="anilloimperio">
+            <img src="imgcollaresyaretes/anilloimperio2.jpg" alt="anilloimperio">
+        </div>
+        <div class="product-description" style="display:none;">
+            Anillo con 2.0ct de moissanita corte esmeralda, simbolizando pasado, presente y futuro.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Plata S925, Moissanita 2.0ct total.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Plata S925</li>
+            <li>Talla 7 </li>
+            <li>Moissanita certificada</li>
+            <li>Tres piedras</li>
+        </ul>
+    </div>
+</div>
+
+<div class="product-card" data-categoria="collares">
+    <div class="product-card-content">
+        <img src="imgcollaresyaretes/anillofuego.jpg" class="product-image" alt="anillofuego">
+        <div class="product-name">Anillo Fuego</div>
+        <div class="product-price">$750</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgcollaresyaretes/anillofuego1.jpg" alt="anillofuego">
+            <img src="imgcollaresyaretes/anillofuego2.jpg" alt="anillofuego">
+            <img src="imgcollaresyaretes/anillofuego3.jpg" alt="anillofuego">
+        </div>
+        <div class="product-description" style="display:none;">
+            Anillo con diseño vintage, con moissanitas al rededor y moissanita central roja.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Plata S925, Moissanita 1ct.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Plata S925</li>
+            <li>Talla 6 </li>
+            <li>Moissanita certificada</li>
+            <li>Estilo vintage</li>
+        </ul>
+    </div>
+</div>
+
+<div class="product-card" data-categoria="collares">
+    <div class="product-card-content">
+        <img src="imgcollaresyaretes/anilloval.jpg" class="product-image" alt="anilloval">
+        <div class="product-name">Anillo Oval</div>
+        <div class="product-price">$1,650</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgcollaresyaretes/anilloval1.jpg" alt="anilloval">
+            <img src="imgcollaresyaretes/anilloval2.jpg" alt="anilloval">
+            <img src="imgcollaresyaretes/anilloval3.jpg" alt="anilloval">
+        </div>
+        <div class="product-description" style="display:none;">
+            Anillo con corte oval, moissanita 3.0ct.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Plata S925, Moissanita corte oval 3.0ct.
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Plata S925</li>
+            <li>Talla 7</li>
+            <li>Moissanita certificada</li>
+            <li>Corte princesa</li>
+        </ul>
+    </div>
+</div> <!-- Collares y anillos -->
         <div class="product-card" data-categoria="collares">
             <div class="product-card-content">
                 <img src="img/cubanabrillante.jpg" class="product-image" alt="Cadenabrillante">
@@ -316,6 +471,54 @@
 
 
         <!-- Relojes -->
+         <div class="product-card" data-categoria="relojes">
+            <div class="product-card-content">
+                <img src="IMGRELOJES/AP.jpg" class="product-image" alt="ap">
+                <div class="product-name">Audemars Piguet</div>
+                <div class="product-price">$1,000</div>
+                <button class="ver-producto-btn">Ver</button>
+                <div class="product-gallery" style="display:none;">
+                    <img src="IMGRELOJES/AP1.jpg" alt="AP">
+                    <img src="IMGRELOJES/AP2.jpg" alt="AP">
+                    <img src="IMGRELOJES/AP3.jpg" alt="AP">
+                </div>
+                <div class="product-description" style="display:none;">
+                    AP, con zirconia cada segundo es estilo y precision.
+                </div>
+                <div class="product-specs" style="display:none;">
+                    <strong>Especificaciones:</strong> Diametro de esfera 40mm, ancho de correa 20mm, longuitud 21cm </div>
+                <ul class="product-features" style="display:none;">
+                    <li>Cristal ultra Resistente</li>
+                    <li>Ajustable</li>
+                    <li>Luminoso</li>
+                    <li>Acero inoxidable</li>
+                </ul>
+            </div>
+        </div>
+         <div class="product-card" data-categoria="relojes">
+            <div class="product-card-content">
+                <img src="IMGRELOJES/Patek.jpg" class="product-image" alt="patek">
+                <div class="product-name">Patek Philippe Tiffany</div>
+                <div class="product-price">$1,500</div>
+                <button class="ver-producto-btn">Ver</button>
+                <div class="product-gallery" style="display:none;">
+                    <img src="IMGRELOJES/Patek1.jpg" alt="patek">
+                    <img src="IMGRELOJES/Patek2.jpg" alt="patek">
+                </div>
+                <div class="product-description" style="display:none;">
+                    Patek, Tifanny Automatico cada segundo es estilo y precision.
+                </div>
+                <div class="product-specs" style="display:none;">
+                    <strong>Especificaciones:</strong> Diametro de esfera 42mm, ancho de correa 22mm, longuitud 23cm </div>
+                <ul class="product-features" style="display:none;">
+                    <li>Cristal ultra Resistente</li>
+                    <li>Ajustable</li>
+                    <li>Luminoso</li>
+                    <li>Automatico</li>
+                    <li>Acero inoxidable</li>
+                </ul>
+            </div>
+        </div>
              <div class="product-card" data-categoria="relojes">
             <div class="product-card-content">
                 <img src="img/poedagarAP.jpg" class="product-image" alt="poedagarAP">
@@ -481,6 +684,54 @@
         </div>
 
         <!-- Pulsos -->
+         <!-- Aretes en Pulsos -->
+<div class="product-card" data-categoria="pulsos">
+    <div class="product-card-content">
+        <img src="imgcollaresyaretes/areteazul.jpg" class="product-image" alt="areteazul">
+        <div class="product-name">Aretes Duo Estelar</div>
+        <div class="product-price">$750</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgcollaresyaretes/areteazul1.jpg" alt="areteazul ">
+            <img src="imgcollaresyaretes/areteazul2.jpg" alt="areteazul ">
+        </div>
+        <div class="product-description" style="display:none;">
+            Aretes clásicos duo estelar luz azul con moissanita, elegantes y versátiles.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Plata S925, Moissanita 1.0ct total (0.5ct cada uno).
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Plata S925</li>
+            <li>Moissanita certificada</li>
+            <li>Cierre de presión</li>
+        </ul>
+    </div>
+</div>
+
+<div class="product-card" data-categoria="pulsos">
+    <div class="product-card-content">
+        <img src="imgcollaresyaretes/areteblanco.jpg" class="product-image" alt="areteblanco">
+        <div class="product-name">Aretes Punto de Luz</div>
+        <div class="product-price">$700</div>
+        <button class="ver-producto-btn">Ver</button>
+        <div class="product-gallery" style="display:none;">
+            <img src="imgcollaresyaretes/areteblanco1.jpg" alt="areteblanco">
+            <img src="imgcollaresyaretes/areteblanco2.jpg" alt="arete2blanco">
+        </div>
+        <div class="product-description" style="display:none;">
+            Aretes punto de luz con moissanitas incrustadas, brillo excepcional.
+        </div>
+        <div class="product-specs" style="display:none;">
+            <strong>Especificaciones:</strong> Plata S925, Moissanita 1.0ct (total 0.5ct cada uno).
+        </div>
+        <ul class="product-features" style="display:none;">
+            <li>Plata S925</li>
+            <li>Moissanita certificada</li>
+            <li>Cierre seguro</li>
+        </ul>
+    </div>
+</div>
         <div class="product-card" data-categoria="pulsos">
             <div class="product-card-content">
                 <img src="img/pulsopikos.jpg" class="product-image" alt="pulsopikos">
@@ -3067,7 +3318,7 @@
                     <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div>
                         <strong>Dirección</strong><br>
-                        Toluca de Lerdo, Estado de México<br>
+                        Toluca de Lerdo, Estado de México<br> Envios a todo México📦
                     </div>
                 </div>
                 <div class="contact-item">
