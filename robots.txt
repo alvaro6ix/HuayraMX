@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://huayramx.vercel.app/sitemap.xml
+```
+
+3. **Sube ambos archivos a GitHub** (en la raíz, junto a `index.html`)
+
+4. **Espera a que Vercel haga el deploy** (1-2 minutos)
+
+5. **Verifica que funcionen:**
+   - Abre: `https://huayramx.vercel.app/sitemap.xml`
+   - Abre: `https://huayramx.vercel.app/robots.txt`
+
+6. **Regresa a Google Search Console:**
+   - Click en "Sitemaps" (menú lateral)
+   - En el campo escribe: `sitemap.xml`
+   - Click en "Enviar"
+
+---
+
+## **📊 MIENTRAS ESPERAS LOS DATOS:**
+
+### **Solicita indexación manual ahora:**
+
+1. **En la barra de búsqueda superior** (donde dice "Inspeccionar las URL de..."), pega:
+```
+   https://huayramx.vercel.app/

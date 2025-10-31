@@ -3023,9 +3023,67 @@ body[data-theme="light"] .footer-section .fas.fa-heart {
     }
 }
 
-/* Sección de Reseñas de Clientes */
+
+/* Botón WhatsApp en Modal */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0.9rem 2rem;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.whatsapp-btn:hover {
+    background: linear-gradient(135deg, #128c7e, #075e54);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    color: #ffffff;
+}
+
+.whatsapp-btn i {
+    font-size: 1.3rem;
+}
+
+body[data-theme="light"] .whatsapp-btn {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+}
+
+body[data-theme="light"] .whatsapp-btn:hover {
+    background: linear-gradient(135deg, #128c7e, #075e54);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .whatsapp-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+}
+/* ==========================================
+   SLIDER DE CLIENTES - CSS SIMPLIFICADO
+   ========================================== */
+/* ==========================================
+   SECCIÓN DE RESEÑAS DE CLIENTES
+   ========================================== */
+
 #clientes {
-    padding: 3rem 2rem 0.5rem;
+    padding: 3rem 2rem 0.5rem; /* Reducido padding inferior */
     max-width: 1400px;
     margin: 0 auto;
     min-height: auto;
@@ -3046,9 +3104,8 @@ body[data-theme="light"] #clientes h2 {
 .reviews-slider {
     position: relative;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 0 auto; /* Sin margen inferior */
     padding: 0;
-    margin-bottom: 0;
 }
 
 /* Container de las reseñas */
@@ -3056,15 +3113,11 @@ body[data-theme="light"] #clientes h2 {
     position: relative;
     width: 100%;
     height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(10px);
     border: 2px solid #fb8f24;
     box-shadow: 0 8px 32px rgba(251, 143, 36, 0.2);
+    overflow: hidden;
 }
 
 body[data-theme="light"] .reviews-container {
@@ -3073,12 +3126,15 @@ body[data-theme="light"] .reviews-container {
     box-shadow: 0 8px 32px rgba(2, 81, 185, 0.15);
 }
 
-/* Cada slide */
+/* SLIDES */
+/* SLIDES - CORREGIDO */
 .review-slide {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    display: none;
+    display: none; /* Oculto por defecto */
     align-items: center;
     justify-content: center;
     padding: 2rem;
@@ -3087,20 +3143,9 @@ body[data-theme="light"] .reviews-container {
 }
 
 .review-slide.active {
-    display: flex;
-    opacity: 1;
-    animation: fadeInSlide 0.5s ease;
-}
-
-@keyframes fadeInSlide {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+    display: flex !important; /* Forzar display flex */
+    opacity: 1 !important; /* Forzar opacidad */
+    z-index: 1;
 }
 
 /* Imagen de la reseña */
@@ -3175,7 +3220,7 @@ body[data-theme="light"] .review-arrow:hover {
     justify-content: center;
     gap: 0.8rem;
     margin-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 0; /* Sin margen inferior */
     padding-bottom: 0;
 }
 
@@ -3226,7 +3271,7 @@ body[data-theme="light"] .review-dot.active {
 
 @media (max-width: 768px) {
     #clientes {
-        padding: 2rem 1rem 0.5rem;
+        padding: 2rem 1rem 0.5rem; /* Espaciado reducido en móvil */
     }
     
     #clientes h2 {
@@ -3282,7 +3327,7 @@ body[data-theme="light"] .review-dot.active {
 
 @media (max-width: 480px) {
     #clientes {
-        padding: 2rem 1rem 0.5rem;
+        padding: 2rem 1rem 0.5rem; /* Mínimo espaciado en móvil pequeño */
     }
     
     #clientes h2 {
@@ -3321,56 +3366,5 @@ body[data-theme="light"] .review-dot.active {
     
     .review-slide {
         padding: 0.5rem;
-    }
-}
-/* Botón WhatsApp en Modal */
-.whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    padding: 0.9rem 2rem;
-    background: linear-gradient(135deg, #25d366, #128c7e);
-    color: #ffffff;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    font-size: 1.05rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-    margin-top: 1.5rem;
-    width: 100%;
-    max-width: 300px;
-}
-
-.whatsapp-btn:hover {
-    background: linear-gradient(135deg, #128c7e, #075e54);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-    color: #ffffff;
-}
-
-.whatsapp-btn i {
-    font-size: 1.3rem;
-}
-
-body[data-theme="light"] .whatsapp-btn {
-    background: linear-gradient(135deg, #25d366, #128c7e);
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
-}
-
-body[data-theme="light"] .whatsapp-btn:hover {
-    background: linear-gradient(135deg, #128c7e, #075e54);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    .whatsapp-btn {
-        padding: 0.8rem 1.5rem;
-        font-size: 0.95rem;
-        max-width: 100%;
     }
 }
