@@ -455,6 +455,7 @@ body[data-theme="light"] .social-link:hover {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100dvh; /* <-- NUEVO: Dynamic Viewport Height */
     height: 100vh;
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(20px);
@@ -1517,6 +1518,7 @@ body[data-theme="light"] .ver-producto-btn:hover {
     top: 0;
     left: 0;
     width: 100vw;
+    height: 100dvh; /* <-- NUEVO: Dynamic Viewport Height */
     height: 100vh;
     background: rgba(20, 20, 20, 0.85);
     display: none;
@@ -1545,6 +1547,10 @@ body[data-theme="light"] .modal {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    max-height: 95dvh; /* Limita la altura máxima para dejar espacio para el margen */
+    max-height: 95vh; /* Fallback */
+    overflow-y: auto; /* Asegura que se pueda hacer scroll dentro si es necesario */
 }
 
 body[data-theme="light"] .modal-content {
@@ -2341,7 +2347,9 @@ body[data-theme="light"] .mercadopago-btn:hover {
 .zoom-modal {
     position: fixed;
     top: 0; left: 0;
-    width: 100vw; height: 100vh;
+    width: 100vw;
+    height: 100dvh; /* <-- NUEVO: Dynamic Viewport Height */
+    height: 100vh;
     background: rgba(20,20,20,0.95);
     display: none;
     align-items: center;
